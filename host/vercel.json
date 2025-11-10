@@ -1,9 +1,9 @@
 {
-    "rewrites": [
+    "builds": [
       {
-        "source": "/",
-        "destination": "/host/src/index.html"
+        "src": "src/main.ts",
+        "use": "@vercel/node"
       }
-    ]
+    ],
+    "outputDirectory": "dist/host"
   }
-  
